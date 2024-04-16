@@ -6,8 +6,9 @@ const { data: page } = useAsyncData('index', () =>
   prismic.client.getByUID('page', 'home')
 )
 
-useHead({
-  title: prismic.asText(page.value?.data.title)
+useSeoMeta({
+  title: page.value?.data.meta_title,
+  description: page.value?.data.meta_description,
 })
 </script>
 
