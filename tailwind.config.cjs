@@ -9,6 +9,7 @@ module.exports = {
 				heading: ['Nunito Variable', 'sans-serif'],
 			}
 		}
-    }
+    },
+	plugins: [],
   }
   
